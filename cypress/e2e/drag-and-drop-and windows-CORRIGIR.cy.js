@@ -9,7 +9,7 @@ describe('drag and drop and windows', () => {
       })         
 });
 
-describe('Drag and Drop and Windows', () => {
+describe.only('Drag and Drop and Windows', () => {
     it('Multiple Windows', () => {
     });
   
@@ -20,5 +20,5 @@ describe('Drag and Drop and Windows', () => {
   
       cy.contains('A').trigger('dragstart', { dataTransfer })
       cy.contains('B').trigger('drop', { dataTransfer })
-    })
-  })
+    });
+  });
